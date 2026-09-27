@@ -1,0 +1,103 @@
+{
+  "name": "kichi-game-box",
+  "tree": {
+    "$className": "DataModel",
+    "Workspace": {
+      "$properties": {
+        "FilteringEnabled": true
+      },
+      "Baseplate": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Locked": true,
+          "Size": [
+            512,
+            1,
+            512
+          ],
+          "Position": [
+            0,
+            -0.5,
+            0
+          ],
+          "Color": [
+            0.3882,
+            0.3725,
+            0.3882
+          ],
+          "Material": "Plastic",
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "SpawnLocation": {
+        "$className": "SpawnLocation",
+        "$properties": {
+          "Anchored": true,
+          "Duration": 0,
+          "Size": [
+            6,
+            1,
+            6
+          ],
+          "Position": [
+            0,
+            0.5,
+            0
+          ],
+          "Neutral": true,
+          "Material": "Plastic",
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      }
+    },
+    "Lighting": {
+      "$properties": {
+        "Ambient": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "Brightness": 2,
+        "GlobalShadows": true,
+        "Outlines": false,
+        "Technology": "ShadowMap"
+      }
+    },
+    "SoundService": {
+      "$properties": {
+        "RespectFilteringEnabled": true
+      }
+    },
+    "ReplicatedStorage": {
+      "Shared": {
+        "$path": "src/shared"
+      }
+    },
+    "ServerScriptService": {
+      "Server": {
+        "$path": "src/server"
+      }
+    },
+    "StarterPlayer": {
+      "$properties": {
+        "CameraMaxZoomDistance": 64,
+        "CameraMinZoomDistance": 8,
+        "CameraMode": "Classic",
+        "EnableMouseLockOption": true
+      },
+      "StarterPlayerScripts": {
+        "Client": {
+          "$path": "src/client"
+        }
+      }
+    },
+    "StarterGui": {
+      "$properties": {
+        "ScreenOrientation": "LandscapeSensor"
+      }
+    }
+  }
+}
